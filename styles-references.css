@@ -140,3 +140,43 @@ body {
     padding-right: 20px;
   }
 }
+
+.nav-wrapper {
+    display: flex;
+    width: 100%;
+    max-width: 1060px;
+    align-items: stretch;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .logo-image {
+    aspect-ratio: 5.75;
+    object-fit: contain;
+    object-position: center;
+    width: 184px;
+    flex-shrink: 0;
+    max-width: 100%;
+  }
+  
+  .sections {
+    display: flex;
+    margin-top: auto;
+    margin-bottom: auto;
+    align-items: start;
+    gap: 33px;
+    justify-content: start;
+  }
+  
+  .nav-link {
+    font-feature-settings:
+      "liga" off,
+      "clig" off;
+    text-decoration: none;
+    color: #202229;
+  }
+  
+  .nav-link.active {
+    color: #ff585b;
+  }
