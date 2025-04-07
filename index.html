@@ -1,129 +1,183 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Typography Showcase</title>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: 'Open Sans', sans-serif;
-        }
-
-        .typography-showcase {
-            padding: 48px;
-            width: 100%;
-            background-color: rgb(38, 38, 38);
-            min-height: 100vh;
-        }
-
-        .title {
-            margin-bottom: 80px;
-            font-size: 24px;
-            font-weight: bold;
-            line-height: 28px;
-            color: rgb(244, 244, 245);
-        }
-
-        .description {
-            margin-bottom: 64px;
-            font-size: 14px;
-            font-weight: bold;
-            line-height: 28px;
-            color: white;
-            max-width: 446px;
-        }
-
-        .examples {
-            display: flex;
-            flex-direction: column;
-            gap: 36px;
-        }
-
-        .big-head {
-            font-size: 24px;
-            line-height: 28px;
-            color: rgb(244, 244, 245);
-        }
-
-        .head {
-            font-size: 20px;
-            line-height: 24px;
-            color: rgb(244, 244, 245);
-        }
-
-        .sub-head {
-            font-size: 18px;
-            line-height: 20px;
-            color: rgb(244, 244, 245);
-        }
-
-        .body-copy {
-            font-size: 16px;
-            color: rgb(244, 244, 245);
-        }
-
-        .subtext {
-            font-size: 13px;
-            line-height: 16px;
-            color: rgb(244, 244, 245);
-        }
-
-        .label {
-            font-size: 14px;
-            font-weight: 300;
-            line-height: 16px;
-            color: rgb(244, 244, 245);
-        }
-
-        @media (max-width: 768px) {
-            .typography-showcase {
-                padding: 32px;
-            }
-        }
-
-        @media (max-width: 640px) {
-            .typography-showcase {
-                padding: 24px;
-            }
-        }
-    </style>
-</head>
-<body>
-    <article class="typography-showcase">
-        <header class="title">
-            Typography
-        </header>
-
-        <section class="description">
-            <p>
-                When we we're picking fonts we had 2 goals in mind. It needed to be
-                clean. The general look and theme of our app is very professional, so we
-                needed a font that would fit that theme. This in addition to the
-                inherent 'digital-ness' of the project basically ruled out any serif
-                fonts. The font needed to be versatile. We want a clean look, and one of
-                the ways we're going about that is keeping to a single font family for
-                the entire app. We needed something with lots of styles so that we
-                wouldn't have to compromise our overall design based on font
-                limitations. At that point we had narrowed it down to Roboto, Helvetica,
-                Arial, and Open Sans. We did a quick vote and Open Sans won.
-            </p>
-        </section>
-
-        <section class="examples">
-            <h2 class="big-head">Big-Head 23/26</h2>
-            <h3 class="head">Head 20/23</h3>
-            <h4 class="sub-head">Sub-Head 18/21</h4>
-            <p class="body-copy">Body Copy 16/18</p>
-            <p class="subtext">Subtext 13/15</p>
-            <p class="label">Label 14/16</p>
-        </section>
-    </article>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LocaLens - A New Perspective</title>
+    <link rel="stylesheet" href="styles-home.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="page-container">
+      <header class="navbar">
+        <div class="navbar-content">
+          <div class="logo-container">
+            <div class="logo-icon-wrapper">
+              <svg
+                layer-name="Layer_1-2"
+                width="59"
+                height="67"
+                viewBox="0 0 59 67"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                class="nav-logo-icon"
+              >
+                <path
+                  d="M24.2459 6.02628V13.5449H51.4937V66.4296H59V6.02628H24.2459Z"
+                  fill="url(#paint0_radial_52_1159)"
+                ></path>
+                <path
+                  d="M38.5223 17.7181C36.1118 16.2543 33.0573 15.5233 29.3569 15.5233C25.6564 15.5233 22.553 16.2562 20.1444 17.7181C17.7339 19.182 15.9486 21.2325 14.783 23.8716C13.6173 26.5088 13.0354 29.6131 13.0354 33.1844C13.0354 35.8862 13.3612 38.3241 14.0165 40.4942C14.67 42.6662 15.6605 44.5402 16.9844 46.1161C18.3083 47.692 19.9994 48.8995 22.0577 49.7349C24.116 50.5703 26.5321 50.9899 29.3079 50.9899C32.0837 50.9899 34.5413 50.5722 36.5826 49.7349C38.624 48.8995 40.3076 47.692 41.6314 46.1161C42.9553 44.5402 43.944 42.6662 44.5993 40.4942C45.2528 38.3222 45.5805 35.9014 45.5805 33.2319C45.5805 29.6606 45.0061 26.5487 43.8574 23.8944C42.7086 21.2401 40.929 19.182 38.5204 17.7181H38.5223ZM37.0139 39.4082C36.4395 41.1454 35.5224 42.4726 34.2626 43.3896C33.0008 44.3067 31.3512 44.7642 29.3079 44.7642C27.2647 44.7642 25.7016 44.3067 24.4267 43.3896C23.1499 42.4726 22.2177 41.1454 21.6264 39.4082C21.0351 37.6709 20.7413 35.6128 20.7413 33.2319C20.7413 30.851 21.0351 28.753 21.6264 27.0309C22.2159 25.3108 23.1499 23.9836 24.4267 23.0495C25.7016 22.1173 27.3456 21.6502 29.3569 21.6502C32.4208 21.6502 34.6053 22.6793 35.9141 24.7393C37.2229 26.7974 37.8764 29.6302 37.8764 33.2319C37.8764 35.6128 37.5901 37.6709 37.0158 39.4082H37.0139Z"
+                  fill="url(#paint1_radial_52_1159)"
+                ></path>
+                <path
+                  d="M7.50824 0H0V60.4033H34.7541V52.8847H7.50824V0Z"
+                  fill="url(#paint2_radial_52_1159)"
+                ></path>
+                <defs>
+                  <radialGradient
+                    id="paint0_radial_52_1159"
+                    cx="0"
+                    cy="0"
+                    r="1"
+                    gradientUnits="userSpaceOnUse"
+                    gradientTransform="translate(20.7997 42.7175) scale(58.4445 58.9243)"
+                  >
+                    <stop stop-color="#FF3E41"></stop>
+                    <stop offset="0.17" stop-color="#FF4241"></stop>
+                    <stop offset="0.34" stop-color="#FF4E42"></stop>
+                    <stop offset="0.51" stop-color="#FF6343"></stop>
+                    <stop offset="0.69" stop-color="#FF8045"></stop>
+                    <stop offset="0.87" stop-color="#FFA547"></stop>
+                    <stop offset="1" stop-color="#FFC64A"></stop>
+                  </radialGradient>
+                  <radialGradient
+                    id="paint1_radial_52_1159"
+                    cx="0"
+                    cy="0"
+                    r="1"
+                    gradientUnits="userSpaceOnUse"
+                    gradientTransform="translate(9.80948 37.0672) scale(49.957 50.3671)"
+                  >
+                    <stop stop-color="#FF3E41"></stop>
+                    <stop offset="0.17" stop-color="#FF4241"></stop>
+                    <stop offset="0.34" stop-color="#FF4E42"></stop>
+                    <stop offset="0.51" stop-color="#FF6343"></stop>
+                    <stop offset="0.69" stop-color="#FF8045"></stop>
+                    <stop offset="0.87" stop-color="#FFA547"></stop>
+                    <stop offset="1" stop-color="#FFC64A"></stop>
+                  </radialGradient>
+                  <radialGradient
+                    id="paint2_radial_52_1159"
+                    cx="0"
+                    cy="0"
+                    r="1"
+                    gradientUnits="userSpaceOnUse"
+                    gradientTransform="translate(-3.44622 36.6912) scale(58.4445 58.9243)"
+                  >
+                    <stop stop-color="#FF3E41"></stop>
+                    <stop offset="0.17" stop-color="#FF4241"></stop>
+                    <stop offset="0.34" stop-color="#FF4E42"></stop>
+                    <stop offset="0.51" stop-color="#FF6343"></stop>
+                    <stop offset="0.69" stop-color="#FF8045"></stop>
+                    <stop offset="0.87" stop-color="#FFA547"></stop>
+                    <stop offset="1" stop-color="#FFC64A"></stop>
+                  </radialGradient>
+                </defs>
+              </svg>
+            </div>
+            <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/d895edc24333eafe6402799cf81f6c2d6176742a" alt="LocaLens" class="nav-logo" />
+          </div>
+          <nav class="nav-links">
+            <a href="#" class="nav-link">Logos</a>
+            <a href="#" class="nav-link">Colours</a>
+            <a href="#" class="nav-link">Styles</a>
+            <a href="#" class="nav-link">References</a>
+          </nav>
+        </div>
+      </header>
+      <main class="main-content">
+        <div class="main-logo-wrapper">
+          <svg
+            layer-name="Layer_1-2"
+            width="347"
+            height="391"
+            viewBox="0 0 347 391"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            class="main-logo"
+          >
+            <path
+              d="M142.599 35.4427V79.6623H302.853V390.696H347V35.4427H142.599Z"
+              fill="url(#paint0_radial_37_258)"
+            ></path>
+            <path
+              d="M226.563 104.207C212.387 95.5971 194.422 91.2979 172.658 91.2979C150.895 91.2979 132.642 95.6082 118.476 104.207C104.299 112.816 93.7997 124.876 86.9438 140.397C80.088 155.908 76.6656 174.165 76.6656 195.169C76.6656 211.059 78.5817 225.397 82.4361 238.161C86.2793 250.935 92.1051 261.957 99.8913 271.225C107.677 280.493 117.623 287.595 129.729 292.509C141.835 297.422 156.045 299.89 172.37 299.89C188.696 299.89 203.15 297.433 215.156 292.509C227.161 287.595 237.063 280.493 244.849 271.225C252.635 261.957 258.45 250.935 262.305 238.161C266.148 225.386 268.075 211.149 268.075 195.449C268.075 174.444 264.697 156.142 257.941 140.531C251.185 124.921 240.718 112.816 226.552 104.207H226.563ZM217.692 231.773C214.314 241.991 208.92 249.796 201.51 255.19C194.09 260.583 184.387 263.274 172.37 263.274C160.353 263.274 151.16 260.583 143.662 255.19C136.153 249.796 130.67 241.991 127.193 231.773C123.715 221.556 121.987 209.452 121.987 195.449C121.987 181.446 123.715 169.107 127.193 158.979C130.659 148.862 136.153 141.056 143.662 135.562C151.16 130.079 160.829 127.332 172.658 127.332C190.678 127.332 203.526 133.385 211.224 145.501C218.921 157.605 222.764 174.266 222.764 195.449C222.764 209.452 221.081 221.556 217.703 231.773H217.692Z"
+              fill="url(#paint1_radial_37_258)"
+            ></path>
+            <path
+              d="M44.1586 0H0V355.254H204.401V311.034H44.1586V0Z"
+              fill="url(#paint2_radial_37_258)"
+            ></path>
+            <defs>
+              <radialGradient
+                id="paint0_radial_37_258"
+                cx="0"
+                cy="0"
+                r="1"
+                gradientUnits="userSpaceOnUse"
+                gradientTransform="translate(122.331 251.237) scale(343.733 346.555)"
+              >
+                <stop stop-color="#FF3E41"></stop>
+                <stop offset="0.17" stop-color="#FF4241"></stop>
+                <stop offset="0.34" stop-color="#FF4E42"></stop>
+                <stop offset="0.51" stop-color="#FF6343"></stop>
+                <stop offset="0.69" stop-color="#FF8045"></stop>
+                <stop offset="0.87" stop-color="#FFA547"></stop>
+                <stop offset="1" stop-color="#FFC64A"></stop>
+              </radialGradient>
+              <radialGradient
+                id="paint1_radial_37_258"
+                cx="0"
+                cy="0"
+                r="1"
+                gradientUnits="userSpaceOnUse"
+                gradientTransform="translate(57.6931 218.005) scale(293.815 296.227)"
+              >
+                <stop stop-color="#FF3E41"></stop>
+                <stop offset="0.17" stop-color="#FF4241"></stop>
+                <stop offset="0.34" stop-color="#FF4E42"></stop>
+                <stop offset="0.51" stop-color="#FF6343"></stop>
+                <stop offset="0.69" stop-color="#FF8045"></stop>
+                <stop offset="0.87" stop-color="#FFA547"></stop>
+                <stop offset="1" stop-color="#FFC64A"></stop>
+              </radialGradient>
+              <radialGradient
+                id="paint2_radial_37_258"
+                cx="0"
+                cy="0"
+                r="1"
+                gradientUnits="userSpaceOnUse"
+                gradientTransform="translate(-20.2684 215.794) scale(343.733 346.555)"
+              >
+                <stop stop-color="#FF3E41"></stop>
+                <stop offset="0.17" stop-color="#FF4241"></stop>
+                <stop offset="0.34" stop-color="#FF4E42"></stop>
+                <stop offset="0.51" stop-color="#FF6343"></stop>
+                <stop offset="0.69" stop-color="#FF8045"></stop>
+                <stop offset="0.87" stop-color="#FFA547"></stop>
+                <stop offset="1" stop-color="#FFC64A"></stop>
+              </radialGradient>
+            </defs>
+          </svg>
+        </div>
+        <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/8804b61d5dcf60eb61112ab8db13b07c594c07f2" alt="LocaLens" class="text-logo" />
+        <h1 class="tagline">A New Prespective</h1>
+        <button class="cta-button">Learn More</button>
+      </main>
+    </div>
+  </body>
 </html>
