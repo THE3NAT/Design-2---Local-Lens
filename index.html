@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Typography Showcase</title>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Open Sans', sans-serif;
+        }
+
+        .typography-showcase {
+            padding: 48px;
+            width: 100%;
+            background-color: rgb(38, 38, 38);
+            min-height: 100vh;
+        }
+
+        .title {
+            margin-bottom: 80px;
+            font-size: 24px;
+            font-weight: bold;
+            line-height: 28px;
+            color: rgb(244, 244, 245);
+        }
+
+        .description {
+            margin-bottom: 64px;
+            font-size: 14px;
+            font-weight: bold;
+            line-height: 28px;
+            color: white;
+            max-width: 446px;
+        }
+
+        .examples {
+            display: flex;
+            flex-direction: column;
+            gap: 36px;
+        }
+
+        .big-head {
+            font-size: 24px;
+            line-height: 28px;
+            color: rgb(244, 244, 245);
+        }
+
+        .head {
+            font-size: 20px;
+            line-height: 24px;
+            color: rgb(244, 244, 245);
+        }
+
+        .sub-head {
+            font-size: 18px;
+            line-height: 20px;
+            color: rgb(244, 244, 245);
+        }
+
+        .body-copy {
+            font-size: 16px;
+            color: rgb(244, 244, 245);
+        }
+
+        .subtext {
+            font-size: 13px;
+            line-height: 16px;
+            color: rgb(244, 244, 245);
+        }
+
+        .label {
+            font-size: 14px;
+            font-weight: 300;
+            line-height: 16px;
+            color: rgb(244, 244, 245);
+        }
+
+        @media (max-width: 768px) {
+            .typography-showcase {
+                padding: 32px;
+            }
+        }
+
+        @media (max-width: 640px) {
+            .typography-showcase {
+                padding: 24px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <article class="typography-showcase">
+        <header class="title">
+            Typography
+        </header>
+
+        <section class="description">
+            <p>
+                When we we're picking fonts we had 2 goals in mind. It needed to be
+                clean. The general look and theme of our app is very professional, so we
+                needed a font that would fit that theme. This in addition to the
+                inherent 'digital-ness' of the project basically ruled out any serif
+                fonts. The font needed to be versatile. We want a clean look, and one of
+                the ways we're going about that is keeping to a single font family for
+                the entire app. We needed something with lots of styles so that we
+                wouldn't have to compromise our overall design based on font
+                limitations. At that point we had narrowed it down to Roboto, Helvetica,
+                Arial, and Open Sans. We did a quick vote and Open Sans won.
+            </p>
+        </section>
+
+        <section class="examples">
+            <h2 class="big-head">Big-Head 23/26</h2>
+            <h3 class="head">Head 20/23</h3>
+            <h4 class="sub-head">Sub-Head 18/21</h4>
+            <p class="body-copy">Body Copy 16/18</p>
+            <p class="subtext">Subtext 13/15</p>
+            <p class="label">Label 14/16</p>
+        </section>
+    </article>
+</body>
+</html>
