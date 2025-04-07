@@ -1,0 +1,150 @@
+/* Base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Noto Sans", sans-serif;
+}
+
+.page-container {
+  min-height: 100vh;
+  background-color: #202229;
+}
+
+/* Navbar styles */
+.navbar {
+  width: 100%;
+  height: 110px;
+  position: fixed;
+  top: 0;
+  z-index: 100;
+}
+
+.navbar-content {
+  width: 100%;
+  height: 110px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 187px;
+  background-color: rgba(241, 241, 241, 0.75);
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.nav-logo {
+  width: 184px;
+  height: 32px;
+}
+
+.nav-links {
+  display: flex;
+  gap: 33px;
+}
+
+.nav-link {
+  color: #202229;
+  font-family: "Noto Sans", sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+/* Main content styles */
+.main-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 150px;
+}
+
+.main-logo {
+  width: 347px;
+  height: 391px;
+}
+
+.text-logo {
+  width: 352px;
+  height: 61px;
+  margin-top: 32px;
+}
+
+.tagline {
+  color: #f1f1f1;
+  font-family: "Noto Sans", sans-serif;
+  font-size: 24px;
+  font-weight: 300;
+  margin-top: 16px;
+}
+
+.cta-button {
+  width: 158px;
+  height: 36px;
+  border-radius: 20px;
+  color: #202229;
+  font-family: "Noto Sans", sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  margin-top: 79px;
+  cursor: pointer;
+  background-color: #f1f1f1;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 100px
+}
+
+/* Media queries */
+@media (max-width: 991px) {
+  .navbar-content {
+    padding: 0 40px;
+  }
+
+  .main-content {
+    padding-top: 200px;
+  }
+
+  .text-logo {
+    width: 282px;
+    height: 49px;
+  }
+}
+
+@media (max-width: 640px) {
+  .navbar-content {
+    padding: 0 20px;
+  }
+
+  .nav-links {
+    display: none;
+  }
+
+  .main-content {
+    padding-top: 150px;
+  }
+
+  .text-logo {
+    width: 200px;
+    height: 35px;
+  }
+
+  .tagline {
+    font-size: 20px;
+  }
+
+  .cta-button {
+    width: 140px;
+    height: 32px;
+    font-size: 18px;
+    margin-bottom: 50px;
+  }
+}
